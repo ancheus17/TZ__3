@@ -1,0 +1,90 @@
+import unittest
+import main
+import time
+
+
+class MyTestCase(unittest.TestCase):
+
+    def test_1(self):
+        print("Проверка времени выполнения с файлом 1KB")
+        start_time = time.time()
+        main.readNums("simpleTest.txt")
+        print(f"Время чтения чисел из файла: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMin()
+        print(f"Время поиска минимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMax()
+        print(f"Время поиска максимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getSum()
+        print(f"Время вычисления суммы: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMult()
+        print(f"Время вычисления произведения: {time.time() - start_time} секунд")
+        print()
+        self.assertTrue(True, "sd")
+
+    def test_100(self):
+        print("Проверка времени выполнения с файлом 100KB")
+        start_time = time.time()
+        main.readNums("100.txt")
+        print(f"Время чтения чисел из файла: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMin()
+        print(f"Время поиска минимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMax()
+        print(f"Время поиска максимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getSum()
+        print(f"Время вычисления суммы: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMult()
+        print(f"Время вычисления произведения: {time.time() - start_time} секунд")
+        print()
+        self.assertTrue(True)
+
+    def test_500(self):
+        print("Проверка времени выполнения с файлом 500KB")
+        start_time = time.time()
+        main.readNums("500.txt")
+        print(f"Время чтения чисел из файла: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMin()
+        print(f"Время поиска минимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMax()
+        print(f"Время поиска максимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getSum()
+        print(f"Время вычисления суммы: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMult()
+        print(f"Время вычисления произведения: {time.time() - start_time} секунд")
+        print()
+        self.assertTrue(True)
+
+    def test_1000(self):
+        print("Проверка времени выполнения с файлом 1MB")
+        start_time = time.time()
+        main.readNums("1000.txt")
+        print(f"Время чтения чисел из файла: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMin()
+        print(f"Время поиска минимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMax()
+        print(f"Время поиска максимума: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getSum()
+        print(f"Время вычисления суммы: {time.time() - start_time} секунд")
+        start_time = time.time()
+        main.getMult()
+        print(f"Время вычисления произведения: {time.time() - start_time} секунд")
+        print()
+        self.assertTrue(True)
+
+
+if __name__ == '__main__':
+    unittest.main()
