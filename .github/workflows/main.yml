@@ -80,8 +80,8 @@ jobs:
             1) Тест на корректное считывание: <b><u>${{ steps.setup.outputs.test1 }}</u></b>
             2) Тест на корректное вычисление минимума: <b><u>${{ steps.setup.outputs.test2 }}</u></b>
             3) Тест на корректное вычисление максимума: <b><u>${{ steps.setup.outputs.test3 }}</u></b>
-            4) Тест на корректное вычисление суммы: <b><u>${{ steps.amogus.setup.test4 }}</u></b>
-            5) Тест на корректное вычисление произведения: <b><u>${{ steps.amogus.setup.test5 }}</u></b>
+            4) Тест на корректное вычисление суммы: <b><u>${{ steps.setup.test4 }}</u></b>
+            5) Тест на корректное вычисление произведения: <b><u>${{ steps.setup.test5 }}</u></b>
             6) Тесты на скорость: <b><u>${{ steps.setup.outputs.test6 }}</u></b>
             
             Репозиторий: ${{ github.repository }}
